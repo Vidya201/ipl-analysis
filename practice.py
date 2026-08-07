@@ -56,8 +56,8 @@ plt.figure(figsize=(6,4))
 plt.bar(labels, values, color=['green', 'red'])
 plt.title('Does Winning Toss Help Win the Match?')
 plt.ylabel('Win Percentage %')
-plt.ylim(40, 55)          # zoom in so difference is visible
+plt.ylim(40, 55)          
 for i, v in enumerate(values):
-    plt.text(i, v+0.1, f'{v:.2f}%', ha='center')   # show % on top of bar
+    plt.text(i, v+0.1, f'{v:.2f}%', ha='center')   
 plt.savefig('toss_impact.png')
 plt.show()
