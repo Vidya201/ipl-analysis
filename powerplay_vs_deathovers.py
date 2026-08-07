@@ -21,6 +21,8 @@ plt.figure(figsize=(6,4))
 plt.bar(labels,values,color=['pink','blue'])
 plt.title('Power_Play vs Death_overs')
 plt.savefig('Power_Play_vs_Death_overs')
+for i, v in enumerate(values):
+    plt.text(i, v+500, f'{v:,}', ha='center', fontweight='bold')
 plt.show()
 
 
